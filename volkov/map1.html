@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div#map {width: 100vw;height: 100vh;}
+        body {margin: 0;padding: 0;}
+        /* ymaps.ymaps-2-1-79-ground-pane {filter: grayscale(1);} */
+    </style>
+</head>
+<body>
+ 
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script>
+        let pins = [
+            {
+                coords: [45.016219, 38.960329],
+                size: [100, 100],
+                offset: [-48,5, -59],
+                icon: '/volkov/assets/img/mapicon.svg',
+                title: 'Постовая улица, 33',
+            },
+            {
+                coords: [45.061465, 39.022663],
+                size: [100, 100],
+                offset: [-48,5, -59],
+                icon: '/volkov/assets/img/mapicon.svg',
+                title: 'улица 1 Мая, 222',
+            },
+           
+        ];
+        ymaps.ready(init);
+        function init() {
+
+            myMap = new ymaps.Map ("map", {
+                center: [45.016219, 38.960329],
+                zoom: 12,
+                controls: ['smallMapDefaultSet'],
+            });
+
+            pins.forEach(pin => {
+                let item = new ymaps.Placemark(pin.coords, { 
+                    content: '', 
+                    balloonContent: pin.title, 
+                }, 
+                {
+                    iconLayout: 'default#image',
+                    iconImageHref: pin.icon,
+                    iconImageSize: pin.size,
+                    iconImageOffset: pin.offset,
+                });  
+                myMap.geoObjects.add(item);
+                // document.querySelectorAll('.contacts__item-filial').forEach(filial => {
+                //     $(this).attr('data-coords') = toString(pin.coords);
+                //     console.log()
+                // })
+            });
+            myMap.behaviors.disable('scrollZoom');
+    }
+
+    </script>
+    <div class="contacts__map" id="map"></div>
+</body>
+</html>

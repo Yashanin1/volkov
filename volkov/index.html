@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/price.css">
+</head>
+<body>
+    <header class="header">
+        <div class="center-wrap">
+            <div class="row header__row --just-space --align-center">
+                <a href="#" class="header__logo" style="text-align: center;">
+                    Логотип - ? <br>
+                    Название сайта - QURAQ
+                </a>
+                <div class="header__menu">
+                    <nav class="header__menu-list">
+                        <!-- <a href="#about" class="header__menu-link ff-16">О враче</a> -->
+                        <!-- <a href="#whyme" class="header__menu-link ff-16">Преимущества</a> -->
+                        <!-- <a href="#services" class="header__menu-link ff-16">Услуги</a> -->
+                        <!-- <a href="#services" class="header__menu-link ff-16">Цены</a> -->
+                        <a href="#contacts" class="header__menu-link ff-16">Контакты</a>
+                    </nav>
+                </div>
+                <div class="header__socials">
+                    <a href="tel:+79183838312" class="header__phone">+7 (771) 824-82-28</a>
+                    <div class="header__time ff-14">Ежедневно с 09:00 - 21:00</div>
+                </div>
+                <!-- <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.1607 6.82742C27.7046 5.37059 25.9747 4.21616 24.0706 3.43059C22.1665 2.64501 20.1259 2.24381 18.0661 2.25007C9.42188 2.25007 2.385 9.25179 2.38148 17.8594C2.37766 20.6003 3.10015 23.2933 4.47539 25.6641L2.25 33.7501L10.5645 31.5795C12.8659 32.8263 15.4423 33.4789 18.0598 33.478H18.0661C26.7096 33.478 33.7458 26.4755 33.75 17.8686C33.7552 15.8159 33.3522 13.7826 32.5643 11.8871C31.7764 9.99154 30.6195 8.27164 29.1607 6.82742ZM18.0661 30.8434H18.0605C15.7271 30.844 13.4361 30.2196 11.4258 29.0349L10.9498 28.7537L6.01594 30.0418L7.33289 25.2542L7.02281 24.762C5.71808 22.6964 5.02681 20.3027 5.02945 17.8594C5.02945 10.7066 10.8802 4.88679 18.071 4.88679C21.5205 4.88063 24.8313 6.2449 27.275 8.67953C29.7187 11.1142 31.0953 14.4198 31.102 17.8693C31.0992 25.0229 25.2513 30.8434 18.0661 30.8434ZM25.2162 21.1269C24.8245 20.9314 22.8959 19.9878 22.5387 19.8577C22.1815 19.7277 21.9178 19.6623 21.657 20.0532C21.3961 20.4441 20.6445 21.3188 20.4159 21.5825C20.1874 21.8462 19.9589 21.875 19.5673 21.6795C19.1756 21.4841 17.9121 21.0727 16.4152 19.7438C15.2501 18.7095 14.464 17.4327 14.2355 17.0424C14.007 16.6522 14.2109 16.4405 14.407 16.2465C14.5835 16.0714 14.7987 15.7909 14.9948 15.563C15.191 15.3352 15.2564 15.1721 15.3865 14.9119C15.5166 14.6518 15.4519 14.424 15.3541 14.2292C15.2564 14.0344 14.4724 12.1142 14.1462 11.333C13.8277 10.5723 13.5049 10.6756 13.2645 10.6637C13.0359 10.6524 12.7723 10.6496 12.5128 10.6496C12.3145 10.6548 12.1193 10.7008 11.9395 10.7847C11.7598 10.8687 11.5992 10.9888 11.468 11.1376C11.1087 11.5285 10.0962 12.4735 10.0962 14.3916C10.0962 16.3098 11.5024 18.166 11.6965 18.4262C11.8905 18.6863 14.4598 22.6259 18.3909 24.3155C19.1209 24.6282 19.8668 24.9023 20.6255 25.1368C21.5641 25.4335 22.4184 25.392 23.0934 25.2915C23.8465 25.1797 25.4137 24.3479 25.7393 23.4366C26.0648 22.5254 26.0655 21.7449 25.9678 21.5825C25.8701 21.4201 25.6085 21.3216 25.2162 21.1269Z" fill="#50B08B"></path>
+                </svg>
+                <a href="#callback" class="btn header__btn ff-16">Оставить заявку</a>
+                <div class="header__burger">
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                </div>
+            </div>
+            <div class="header__menu-mob" style="display: none;">
+                <nav class="header__nav-mob">
+                    <!-- <a href="#about" class="header__nav-mob-link">О специалисте</a> -->
+                    <!-- <a href="#education" class="header__nav-mob-link">Образование</a> -->
+                    <!-- <a href="#whyme" class="header__nav-mob-link">Преимущества</a> -->
+                    <!-- <a href="#services" class="header__nav-mob-link">Услуги</a> -->
+                    <!-- <a href="#reviews" class="header__nav-mob-link">Отзывы о работе</a> -->
+                    <a href="#contacts" class="header__nav-mob-link">Контакты</a>
+                </nav>
+                <div class="header__contacts-mob">
+                    <a href="tel:+79183838312" class="header__phone-mob">+7 (918) 383-83-12</a>
+                    <div class="header__time ff-14">Пн-Вс с 09:00 - 21:00</div>
+                    <a href="#callback" class="btn header__btn-mob">Записаться на прием</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="f_one" id="text">
+                <img src="./assets/img/glav.jpg" alt="" class="f_two">
+                <p class="f_three">Первый текст</p>
+                <p>Второй текст</p>
+                
+            </div>
+                            <p>Добро пожаловать в мир этнической казахской мебели, где современность сочетается с традицией. Представляем вам уникальный комплект, который позволит вам ощутить дух и красоту Казахстана.</p>
+                            <p>Команда профессионалов</p>
+                            <p>Оборудование экспертного уровня</p>
+                            <p>Уважение и индивидуальный подход</p>
+                            <p>Это то, что позволяет нам делать свое дело на высоком уровне</p>
+                            <p> Что видно где текст?</p>
+                            <picture class="entrance__bg-img">
+                                <source type="image/svg+xml" srcset="./assets/img/bgelem.svg">
+                                <img src="./assets/img/bgelem.svg" alt="">
+                            </picture>
+            <div class="whyme" id="whyme">
+                <div class="center-wrap">
+                    <div class="whyme__row row --just-space --align-start">
+                        <div class="whyme__title h1">
+                            Почему стоит выбрать мебель нашего производства? <!-- <span>Станислава Волкова? </span> -->
+                        </div>
+                        <div class="whyme__list">
+                            <div class="whyme__item">
+                                <div class="whyme__item-heading">Высокие стандарты 
+                                    <span class="whyme__item-num">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.63 0.87656C11.1374 0.37448 10.3365 0.37448 9.84389 0.87656L4.42101 6.39559L2.15611 4.0909C1.66346 3.58882 0.862602 3.58882 0.369957 4.0909C-0.123319 4.59298 -0.123319 5.40685 0.369957 5.90894L3.52794 9.12328C3.77426 9.37464 4.09763 9.5 4.42101 9.5C4.74439 9.5 5.06776 9.37464 5.31409 9.12328L11.63 2.69459C12.1233 2.19251 12.1233 1.37864 11.63 0.87656Z" fill="#50B08B"/>
+                                        </svg>
+                                        01
+                                    </span>
+                                </div>
+                                <p class="whyme__text ff-16">Лечение по российским и международным протоколам.</p>
+                            </div>
+                            <div class="whyme__item">
+                                <div class="whyme__item-heading">Качество работы 
+                                    <span class="whyme__item-num">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.63 0.87656C11.1374 0.37448 10.3365 0.37448 9.84389 0.87656L4.42101 6.39559L2.15611 4.0909C1.66346 3.58882 0.862602 3.58882 0.369957 4.0909C-0.123319 4.59298 -0.123319 5.40685 0.369957 5.90894L3.52794 9.12328C3.77426 9.37464 4.09763 9.5 4.42101 9.5C4.74439 9.5 5.06776 9.37464 5.31409 9.12328L11.63 2.69459C12.1233 2.19251 12.1233 1.37864 11.63 0.87656Z" fill="#50B08B"/>
+                                        </svg>
+                                        02
+                                    </span>
+                                </div>
+                                <p class="whyme__text ff-16">Работа в многопрофильной клинике с тщательно подобранным профессиональным коллективом.</p>
+                            </div>
+                            <div class="whyme__item">
+                                <div class="whyme__item-heading">Современные технологии
+                                    <span class="whyme__item-num">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.63 0.87656C11.1374 0.37448 10.3365 0.37448 9.84389 0.87656L4.42101 6.39559L2.15611 4.0909C1.66346 3.58882 0.862602 3.58882 0.369957 4.0909C-0.123319 4.59298 -0.123319 5.40685 0.369957 5.90894L3.52794 9.12328C3.77426 9.37464 4.09763 9.5 4.42101 9.5C4.74439 9.5 5.06776 9.37464 5.31409 9.12328L11.63 2.69459C12.1233 2.19251 12.1233 1.37864 11.63 0.87656Z" fill="#50B08B"/>
+                                        </svg>
+                                        03
+                                    </span>
+                                </div>
+                                    <ul class="whyme__text ff-16">
+                                        <li>лазерные технологии в лечении мочекаменной болезни и аденомы предстательной железы</li>
+                                        <li>3D-технологии в лапароскопической хирургии;</li>
+                                        <li>роботизированные операции в урологии.</li>
+                                    </ul>
+                            </div>
+                            <div class="whyme__item">
+                                <div class="whyme__item-heading">Лучшее оборудование
+                                    <span class="whyme__item-num">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.63 0.87656C11.1374 0.37448 10.3365 0.37448 9.84389 0.87656L4.42101 6.39559L2.15611 4.0909C1.66346 3.58882 0.862602 3.58882 0.369957 4.0909C-0.123319 4.59298 -0.123319 5.40685 0.369957 5.90894L3.52794 9.12328C3.77426 9.37464 4.09763 9.5 4.42101 9.5C4.74439 9.5 5.06776 9.37464 5.31409 9.12328L11.63 2.69459C12.1233 2.19251 12.1233 1.37864 11.63 0.87656Z" fill="#50B08B"/>
+                                        </svg>
+                                        04
+                                    </span>
+                                </div>
+                                <p class="whyme__text ff-16">Использование современных эндоскопов KARL STORZ Rubina®, LithoVue™, гольмиевого лазера Auriga XL, роботизированного комплекса Da Vinci Si HD и новейшего программного обеспечения в диагностике и лечении рака предстательной железы: Fusion-биопсия простаты, брахитерапия рака предстательной железы.</p>
+                            </div>
+                            <div class="whyme__item">
+                                <div class="whyme__item-heading">Лечение сложных случаев
+                                    <span class="whyme__item-num">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.63 0.87656C11.1374 0.37448 10.3365 0.37448 9.84389 0.87656L4.42101 6.39559L2.15611 4.0909C1.66346 3.58882 0.862602 3.58882 0.369957 4.0909C-0.123319 4.59298 -0.123319 5.40685 0.369957 5.90894L3.52794 9.12328C3.77426 9.37464 4.09763 9.5 4.42101 9.5C4.74439 9.5 5.06776 9.37464 5.31409 9.12328L11.63 2.69459C12.1233 2.19251 12.1233 1.37864 11.63 0.87656Z" fill="#50B08B"/>
+                                        </svg>
+                                        05
+                                    </span>
+                                </div>
+                                <p class="whyme__text ff-16">Операции после осложнений лучевой терапии и перенесенных ранее неудачных хирургических вмешательств.</p>
+                            </div>
+                            <div class="whyme__item">
+                                <div class="whyme__item-heading">Имплантационная хирургия
+                                    <span class="whyme__item-num">
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.63 0.87656C11.1374 0.37448 10.3365 0.37448 9.84389 0.87656L4.42101 6.39559L2.15611 4.0909C1.66346 3.58882 0.862602 3.58882 0.369957 4.0909C-0.123319 4.59298 -0.123319 5.40685 0.369957 5.90894L3.52794 9.12328C3.77426 9.37464 4.09763 9.5 4.42101 9.5C4.74439 9.5 5.06776 9.37464 5.31409 9.12328L11.63 2.69459C12.1233 2.19251 12.1233 1.37864 11.63 0.87656Z" fill="#50B08B"/>
+                                        </svg>
+                                        06
+                                    </span>
+                                </div>
+                                <p class="whyme__text ff-16">Фаллопротезирование полужесткими и гидравлическими имплантами серии AMS 700™, установка искусственного уретрального сфинктера AMS 800 ™ и уретральных слингов Obtryx™, AdVance™ XP при недержании мочи.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews" id="reviews">
+                <div class="center-wrap">
+                    <div class="reviews__row row --just-space --align-center">
+                        <div class="h1 reviews__title">Варианты сборки нашей продукции </div>
+                        <div class="reviews__navigation row --align-center">
+                            <div class="reviews__pagination"></div>
+                            <div class="reviews__btn-prev">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M34 22L26 30L34 38" stroke="#282B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="1" y="1" width="58" height="58" rx="29" stroke="#2A2931" stroke-opacity="0.05" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="reviews__btn-next">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26 22L34 30L26 38" stroke="#282B33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="1" y="1" width="58" height="58" rx="29" stroke="#2A2931" stroke-opacity="0.05" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide reviews__slide">
+                                <div class="reviews__slide-row row">
+                                    <picture class="entrance__wrap-img">
+                                        <source type="image/png" srcset="./assets/img/one.jpg">
+                                        <source type="image/webp" srcset="./assets/img/one.jpg">
+                                        <img src="./assets/img/one.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__slide">
+                                <div class="reviews__slide-row row">
+                                    <picture class="entrance__wrap-img">
+                                        <source type="image/png" srcset="./assets/img/two.jpg">
+                                        <source type="image/webp" srcset="./assets/img/two.jpg">
+                                        <img src="./assets/img/two.jpg" alt="">
+                                    </picture>
+                                </div>
+                     
+                            </div>
+                            <div class="swiper-slide reviews__slide">
+                                <div class="reviews__slide-row row">
+                                    <picture class="entrance__wrap-img">
+                                        <source type="image/png" srcset="./assets/img/three.jpg">
+                                        <source type="image/webp" srcset="./assets/img/three.jpg">
+                                        <img src="./assets/img/three.jpg" alt="">
+                                    </picture>
+                                </div>
+                     
+                            </div>
+                            <div class="swiper-slide reviews__slide">
+                                <div class="reviews__slide-row row">
+                                    <picture class="entrance__wrap-img">
+                                        <source type="image/png" srcset="./assets/img/four.png">
+                                        <source type="image/webp" srcset="./assets/img/four.png">
+                                        <img src="./assets/img/four.png" alt="">
+                                    </picture>
+                                </div>
+                     
+                            </div>
+                            <div class="swiper-slide reviews__slide">
+                                <div class="reviews__slide-row row">
+                                    <picture class="entrance__wrap-img">
+                                        <source type="image/png" srcset="./assets/img/five.png">
+                                        <source type="image/webp" srcset="./assets/img/five.png">
+                                        <img src="./assets/img/five.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__slide">
+                                <div class="reviews__slide-row row">
+                                    <picture class="entrance__wrap-img">
+                                        <source type="image/png" srcset="./assets/img/six.png">
+                                        <source type="image/webp" srcset="./assets/img/six.png">
+                                        <img src="./assets/img/six.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="callback" id="callback">
+                <div class="center-wrap">
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <div class="center-wrap">
+                    <div class="contacts__row row --just-space --align-center">
+                        <div class="contacts__title h1">Можно сюда <span>вписать</span> какой-то <br>
+                            текст об обратной связи</div>
+                        <div class="contacts__select row --align-center">
+                            <a href="#" class="contacts__choose active" data-id="1">Шымкент</a>
+                            <!-- <a href="#" class="contacts__choose" data-id="2">Шымкент</a> -->
+                        </div>
+                    </div>
+                    <div class="contacts__content active" data-id="1" style="display: block;">
+                        <div class="contacts__content-row row --just-space --align-start">
+                            <div class="contacts__contacts">
+                                <div class="contacts__desc ff-16">Запись через Ларису хе-хе</div>
+                                <a href="tel:+78612054638" class="contacts__phone">+7 (771) 824-82-28</a>
+                                <a href="mailto:Volkovurolog@gmail.com" class="contacts__mail">Larisa@gmail.com</a>
+                            </div>
+                            <div class="contacts__address">
+                                <a href="https://yandex.ru/maps/-/CCUvVYXUTB" class="contacts__address-link">Казахстан <br>г. Шымкент, <br> ул. Постовая, д. 33</a>
+                                <!-- <a href="https://yandex.ru/maps/-/CCUvVYXDkD" class="contacts__address-link">г. Краснодар, <br> ул. 1 Мая, д. 222</a> -->
+                            </div>
+                            <div class="contacts__time">
+                                <div class="contacts__time-num h3">Пн-Вс 07:00-21:00</div>
+                                <div class="contacts__time-add ff-16">Актуальную информацию о наличии товара <br>просьба уточнять по телефону</div>
+                            </div>
+                            <div class="contacts__socials">
+                                <a target="_blank" href="https://api.whatsapp.com/send/?phone=79183838312&text&type=phone_number&app_absent=0" class="contacts__socials-link">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.1607 6.82742C27.7046 5.37059 25.9747 4.21616 24.0706 3.43059C22.1665 2.64501 20.1259 2.24381 18.0661 2.25007C9.42188 2.25007 2.385 9.25179 2.38148 17.8594C2.37766 20.6003 3.10015 23.2933 4.47539 25.6641L2.25 33.7501L10.5645 31.5795C12.8659 32.8263 15.4423 33.4789 18.0598 33.478H18.0661C26.7096 33.478 33.7458 26.4755 33.75 17.8686C33.7552 15.8159 33.3522 13.7826 32.5643 11.8871C31.7764 9.99154 30.6195 8.27164 29.1607 6.82742ZM18.0661 30.8434H18.0605C15.7271 30.844 13.4361 30.2196 11.4258 29.0349L10.9498 28.7537L6.01594 30.0418L7.33289 25.2542L7.02281 24.762C5.71808 22.6964 5.02681 20.3027 5.02945 17.8594C5.02945 10.7066 10.8802 4.88679 18.071 4.88679C21.5205 4.88063 24.8313 6.2449 27.275 8.67953C29.7187 11.1142 31.0953 14.4198 31.102 17.8693C31.0992 25.0229 25.2513 30.8434 18.0661 30.8434ZM25.2162 21.1269C24.8245 20.9314 22.8959 19.9878 22.5387 19.8577C22.1815 19.7277 21.9178 19.6623 21.657 20.0532C21.3961 20.4441 20.6445 21.3188 20.4159 21.5825C20.1874 21.8462 19.9589 21.875 19.5673 21.6795C19.1756 21.4841 17.9121 21.0727 16.4152 19.7438C15.2501 18.7095 14.464 17.4327 14.2355 17.0424C14.007 16.6522 14.2109 16.4405 14.407 16.2465C14.5835 16.0714 14.7987 15.7909 14.9948 15.563C15.191 15.3352 15.2564 15.1721 15.3865 14.9119C15.5166 14.6518 15.4519 14.424 15.3541 14.2292C15.2564 14.0344 14.4724 12.1142 14.1462 11.333C13.8277 10.5723 13.5049 10.6756 13.2645 10.6637C13.0359 10.6524 12.7723 10.6496 12.5128 10.6496C12.3145 10.6548 12.1193 10.7008 11.9395 10.7847C11.7598 10.8687 11.5992 10.9888 11.468 11.1376C11.1087 11.5285 10.0962 12.4735 10.0962 14.3916C10.0962 16.3098 11.5024 18.166 11.6965 18.4262C11.8905 18.6863 14.4598 22.6259 18.3909 24.3155C19.1209 24.6282 19.8668 24.9023 20.6255 25.1368C21.5641 25.4335 22.4184 25.392 23.0934 25.2915C23.8465 25.1797 25.4137 24.3479 25.7393 23.4366C26.0648 22.5254 26.0655 21.7449 25.9678 21.5825C25.8701 21.4201 25.6085 21.3216 25.2162 21.1269Z" fill="#50B08B"/>
+                                    </svg>
+                                </a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UC9YdiphgMdlEEMgDxxSD3XA" class="contacts__socials-link">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3_3329)">
+                                        <path d="M35.7637 10.4618C35.7637 7.29773 33.4363 4.75242 30.5606 4.75242C26.6653 4.57031 22.6926 4.5 18.6328 4.5H17.3671C13.3171 4.5 9.33744 4.57031 5.44213 4.75312C2.57338 4.75312 0.246033 7.3125 0.246033 10.4766C0.0702518 12.979 -0.00427946 15.4821 -6.07053e-05 17.9852C-0.00709196 20.4884 0.0725956 22.9938 0.239002 25.5016C0.239002 28.6657 2.56635 31.2321 5.4351 31.2321C9.52728 31.422 13.7249 31.5063 17.9929 31.4993C22.2679 31.5134 26.4538 31.4243 30.5507 31.2321C33.4265 31.2321 35.7538 28.6657 35.7538 25.5016C35.9226 22.9915 35.9999 20.4884 35.9929 17.9782C36.0088 15.4751 35.9324 12.9696 35.7637 10.4618ZM14.5546 24.8829V11.0665L24.7499 17.9712L14.5546 24.8829Z" fill="#50B08B"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_3_3329">
+                                        <rect width="36" height="36" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="contacts__content" data-id="2">
+                        <div class="contacts__content-row row --just-space --align-start">
+                            <div class="contacts__contacts">
+                                <div class="contacts__desc ff-16">Запись через call-центр</div>
+                                <a href="tel:+74955000090" class="contacts__phone">+7 (495) 500-00-90</a>
+                                <a href="mailto:Volkovurolog@gmail.com" class="contacts__mail">Volkovurolog@gmail.com</a>
+                            </div>
+                            <div class="contacts__address">
+                                <a href="https://yandex.ru/maps/-/CCUvVBAbsD" class="contacts__address-link">г. Москва, <br> ул. Дмитрия Ульянова, д. 11</a>
+                            </div>
+                            <div class="contacts__time">
+                                <div class="contacts__time-num h3">Пн-Пт 08:00-20:00</div>
+                                <div class="contacts__time-add ff-16">Актуальную информацию о времени <br>приема просьба уточнять по телефону</div>
+                            </div>
+                            <div class="contacts__socials">
+                                <a target="_blank" href="https://api.whatsapp.com/send/?phone=79183838312&text&type=phone_number&app_absent=0" class="contacts__socials-link">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.1607 6.82742C27.7046 5.37059 25.9747 4.21616 24.0706 3.43059C22.1665 2.64501 20.1259 2.24381 18.0661 2.25007C9.42188 2.25007 2.385 9.25179 2.38148 17.8594C2.37766 20.6003 3.10015 23.2933 4.47539 25.6641L2.25 33.7501L10.5645 31.5795C12.8659 32.8263 15.4423 33.4789 18.0598 33.478H18.0661C26.7096 33.478 33.7458 26.4755 33.75 17.8686C33.7552 15.8159 33.3522 13.7826 32.5643 11.8871C31.7764 9.99154 30.6195 8.27164 29.1607 6.82742ZM18.0661 30.8434H18.0605C15.7271 30.844 13.4361 30.2196 11.4258 29.0349L10.9498 28.7537L6.01594 30.0418L7.33289 25.2542L7.02281 24.762C5.71808 22.6964 5.02681 20.3027 5.02945 17.8594C5.02945 10.7066 10.8802 4.88679 18.071 4.88679C21.5205 4.88063 24.8313 6.2449 27.275 8.67953C29.7187 11.1142 31.0953 14.4198 31.102 17.8693C31.0992 25.0229 25.2513 30.8434 18.0661 30.8434ZM25.2162 21.1269C24.8245 20.9314 22.8959 19.9878 22.5387 19.8577C22.1815 19.7277 21.9178 19.6623 21.657 20.0532C21.3961 20.4441 20.6445 21.3188 20.4159 21.5825C20.1874 21.8462 19.9589 21.875 19.5673 21.6795C19.1756 21.4841 17.9121 21.0727 16.4152 19.7438C15.2501 18.7095 14.464 17.4327 14.2355 17.0424C14.007 16.6522 14.2109 16.4405 14.407 16.2465C14.5835 16.0714 14.7987 15.7909 14.9948 15.563C15.191 15.3352 15.2564 15.1721 15.3865 14.9119C15.5166 14.6518 15.4519 14.424 15.3541 14.2292C15.2564 14.0344 14.4724 12.1142 14.1462 11.333C13.8277 10.5723 13.5049 10.6756 13.2645 10.6637C13.0359 10.6524 12.7723 10.6496 12.5128 10.6496C12.3145 10.6548 12.1193 10.7008 11.9395 10.7847C11.7598 10.8687 11.5992 10.9888 11.468 11.1376C11.1087 11.5285 10.0962 12.4735 10.0962 14.3916C10.0962 16.3098 11.5024 18.166 11.6965 18.4262C11.8905 18.6863 14.4598 22.6259 18.3909 24.3155C19.1209 24.6282 19.8668 24.9023 20.6255 25.1368C21.5641 25.4335 22.4184 25.392 23.0934 25.2915C23.8465 25.1797 25.4137 24.3479 25.7393 23.4366C26.0648 22.5254 26.0655 21.7449 25.9678 21.5825C25.8701 21.4201 25.6085 21.3216 25.2162 21.1269Z" fill="#50B08B"/>
+                                    </svg>
+                                </a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UC9YdiphgMdlEEMgDxxSD3XA" class="contacts__socials-link">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3_3329)">
+                                        <path d="M35.7637 10.4618C35.7637 7.29773 33.4363 4.75242 30.5606 4.75242C26.6653 4.57031 22.6926 4.5 18.6328 4.5H17.3671C13.3171 4.5 9.33744 4.57031 5.44213 4.75312C2.57338 4.75312 0.246033 7.3125 0.246033 10.4766C0.0702518 12.979 -0.00427946 15.4821 -6.07053e-05 17.9852C-0.00709196 20.4884 0.0725956 22.9938 0.239002 25.5016C0.239002 28.6657 2.56635 31.2321 5.4351 31.2321C9.52728 31.422 13.7249 31.5063 17.9929 31.4993C22.2679 31.5134 26.4538 31.4243 30.5507 31.2321C33.4265 31.2321 35.7538 28.6657 35.7538 25.5016C35.9226 22.9915 35.9999 20.4884 35.9929 17.9782C36.0088 15.4751 35.9324 12.9696 35.7637 10.4618ZM14.5546 24.8829V11.0665L24.7499 17.9712L14.5546 24.8829Z" fill="#50B08B"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_3_3329">
+                                        <rect width="36" height="36" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/jquery.mask.min.js"></script>
+    <script src="./assets/js/lozad.min.js"></script>
+    <script src="./assets/js/readmore.min.js"></script>
+    <script src="./assets/js/main.min.js"></script>
+    <script src="./assets/js/price.js"></script>
+</body> 
+</html>

@@ -1,0 +1,145 @@
+.price-popup__wrapper {
+    display: none;
+}
+
+.price-popup {
+    border-radius: 24px;
+}
+
+.price-popup .fancybox-close-small {
+    width: 3.875rem;
+    height: 3.875rem;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.price-popup .exclusive__block {
+    margin-top: 1.5rem;
+}
+
+.pirce-popup__text {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 140%;
+    color: rgba(40, 43, 51, 0.5);
+}
+
+.price-popup__filter {
+    margin-top: .75rem;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.price-popup__selectable {
+    background: #F4F6FC;
+    border-radius: 50px;
+    padding: .75rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #282B33;
+}
+
+.price-popup__selectable.active {
+    color: #FFFFFF;
+    background-color: #50B08B;
+}
+
+.price-popup__wrapper {
+    margin-top: 3.125rem;
+}
+
+.price-popup__list {
+    margin-top: 1.5rem;
+}
+
+.price-popup__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid rgba(42, 41, 49, 0.05);
+}
+
+.price-popup__list .price-popup__item:first-child {
+    border-top: 2px solid rgba(42, 41, 49, 0.05);
+}
+
+.price-popup__item-content {
+    flex: 0 1 85%;
+}
+
+.price-popup__logo-img {
+    display: block;
+    width: 2.875rem;
+    height: 2.875rem;
+    margin-right: 1rem;
+}
+
+.price-popup__item-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 140%;
+    color: #282B33;
+}
+
+.price-popup__item-price {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 140%;
+    text-align: right;
+    color: #282B33;
+    flex: 0 1 15%;
+}
+
+.price-popup__item-subname {
+    margin-top: .5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    color: rgba(40, 43, 51, 0.5);
+}
+
+.exclusive-img, .exclusive-img img {
+    object-position: bottom;
+}
+
+@media screen and (max-width: 768px) {
+    .price-popup .center-wrap {
+        padding: unset;
+    }
+
+    .sert__popup {
+        width: 85%!important;
+    }
+
+    .sert__popup-wrap {
+        padding-bottom: 120%!important;
+    }
+
+    .sert__popup {
+        /* height: 90%!important; */
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .price-popup__item {
+        flex-direction: column;
+    }
+
+    .price-popup__item-price {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    .education__title.h1 {
+        font-size: 1.75rem;
+    }
+
+    .price-popup {
+        padding: 1.25rem;
+    }
+}
