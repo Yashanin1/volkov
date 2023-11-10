@@ -187,9 +187,14 @@ body {
     font-family: Georgia, "Times New Roman";
     font-style: italic;
     font-size: 1.5rem;
+    /* font-size: clamp(min, curr, max); */
+    /* font-size: 8vw; */
+    text-wrap: balance;
     padding: 2%;
+    /* text-align: center; */
+    margin: auto;
     /* background: #2196f3; */
-    /* display: inline; */
+    /* display: flex; */
     /* width: 500px; */
     /* height: 300px; */
     /* height: 100%; */
@@ -585,6 +590,14 @@ a, a:hover {
     background-size: cover;
     width: 100%;
 }
+
+.logotip {
+    border-radius: 24px;
+    background-image: url('/assets/img/qgroup.jpg');
+}
+
+
+
 
 .entrance__info {
     padding: 3.875rem 0 3.875rem 3.875rem;
@@ -2117,6 +2130,11 @@ border-radius: 24px;
         font-size: .875rem;
     }
 }
+/* @media screen and (max-width: 420px) {
+    body, html {
+        font-size: .875rem;
+    }
+} */
 
 @media screen and (max-width: 991px) {
 
