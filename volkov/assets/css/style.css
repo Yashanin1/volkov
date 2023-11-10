@@ -148,11 +148,15 @@ body {
 
 .f_two {
     /* width: 100%; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
     font-family: Georgia, "Times New Roman";
-    font-size: 2rem;
-    width: 500px;
-    height: 300px;
+    font-style: italic;
+    font-size: 1.5rem;
+    /* padding: 1%; */
+    /* background: #2196f3; */
+    /* display: inline; */
+    /* width: 500px; */
+    /* height: 300px; */
     /* height: 100%; */
     /* position: absolute; */
 }
@@ -161,9 +165,9 @@ body {
     background-color: #e0dacb7c;
     /* background-position: 25% 75%; */
     /* background-position: 20px 10%; */
-    font-size: 2rem;
+    /* font-size: 2rem; */
     width: 600px;
-    height: 400px;
+    /* height: 300px; */
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
     padding: 0 10px;
@@ -177,13 +181,28 @@ body {
 
 }
 
+.f_four {
+    /* width: 100%; */
+    /* margin-top: 100px; */
+    font-family: Georgia, "Times New Roman";
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 2%;
+    /* background: #2196f3; */
+    /* display: inline; */
+    /* width: 500px; */
+    /* height: 300px; */
+    /* height: 100%; */
+    /* position: absolute; */
+}
+
 .video_one {
     /* background: url('../img/video_one.mp4'); */
     height: 100vh;
     width: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
 }
@@ -289,7 +308,7 @@ a, a:hover {
 }
 
 .main-content {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .header {
@@ -524,41 +543,46 @@ a, a:hover {
 
 .mebel_one {
     border-radius: 24px;
-    background-image: url('/assets/img/one.jpg');
+    background-image: url('/assets/img/dudaray_one.png');
 }
 
 .mebel_two {
     border-radius: 24px;
-    background-image: url('/assets/img/two.jpg');
+    background-image: url('/assets/img/dudaray_two.png');
 }
 
 .mebel_three {
     border-radius: 24px;
-    background-image: url('/assets/img/three.jpg');
+    background-image: url('/assets/img/dudaray_three.png');
 }
 
 .mebel_four {
     border-radius: 24px;
-    background-image: url('/assets/img/four.png');
+    background-image: url('/assets/img/dudaray_four.png');
 }
 
 .mebel_five {
     border-radius: 24px;
-    background-image: url('/assets/img/five.png');
+    background-image: url('/assets/img/dudaray_five.png');
 }
 
 .mebel_six {
     border-radius: 24px;
-    background-image: url('/assets/img/six.png');
+    background-image: url('/assets/img/dudaray_six.png');
+}
+
+.mebel_seven {
+    border-radius: 24px;
+    background-image: url('/assets/img/dudaray_seven.png');
 }
 
 .mebel_glav {
     /* border-radius: 24px; */
     background-image: url('../img/glav.jpg');
-    height: 100lh;
+    /* height: 100lh; */
     /* width: 100lh; */
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
 }
 
@@ -1118,8 +1142,10 @@ a, a:hover {
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 140%;
-    color: #282B33;
+    color: #611515;
     opacity: 0.8;
+    font-family: Georgia, "Times New Roman";
+    font-style: italic;
 }
 
 .whyme__item-heading span {
@@ -1132,7 +1158,8 @@ a, a:hover {
 
 .whyme__text {
     margin-top: .5rem;
-    color: var(--clr-black-50);
+    color: black;
+    font-family: Georgia, "Times New Roman";
 }
 
 ul.whyme__text {
@@ -1386,6 +1413,10 @@ ul.whyme__text {
     margin-top: 2.5rem;
 }
 
+.reviews__swip {
+    margin-top: 2.5rem;
+}
+
 .reviews__slide {
     padding: 2rem;
     background: var(--clr-white-100);
@@ -1493,7 +1524,8 @@ border-radius: 24px;
 }
 
 .reviews__navigation  .swiper-pagination-bullet-active {
-    background-color: var(--clr-primary-1);
+    background-color: #0f67b4;
+    /* background-color: var(--clr-primary-1); */
     width: 1.5rem;
     border-radius: 12px;
     -webkit-transition: ease-in-out .3s;
