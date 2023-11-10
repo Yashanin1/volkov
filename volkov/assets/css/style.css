@@ -136,20 +136,56 @@ body {
 }
 
 .f_one {
-    /* width: 600px; */
-    /* height: 100%; */
-    /* position: relative; */
-    /* display: block; */
+    text-align: left;
+    background-color: #2196f3;
+    /* width: 150px; */
+    /* height: 150px; */
+    padding: 0 10px;
+    font-size: 50px;
+	line-height: 56px;
+    display: inline;
 }
 
 .f_two {
-    width: 100%;
+    /* width: 100%; */
+    margin-top: 100px;
+    font-family: Georgia, "Times New Roman";
+    font-size: 2rem;
+    width: 500px;
+    height: 300px;
     /* height: 100%; */
     /* position: absolute; */
 }
 
 .f_three {
-    /* position: absolute; */
+    background-color: #e0dacb7c;
+    /* background-position: 25% 75%; */
+    /* background-position: 20px 10%; */
+    font-size: 2rem;
+    width: 600px;
+    height: 400px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    padding: 0 10px;
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    bottom: 10%;
+    transform: translateY(10%);
+    /* display: inline; */
+    
+    /* background: rgba(255, 234, 13, 0.5) */
+
+}
+
+.video_one {
+    /* background: url('../img/video_one.mp4'); */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 /* 
 h1, h2, h3, h4, h5, p {
@@ -520,8 +556,10 @@ a, a:hover {
     /* border-radius: 24px; */
     background-image: url('../img/glav.jpg');
     height: 100lh;
+    /* width: 100lh; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    width: 100%;
 }
 
 .entrance__info {
