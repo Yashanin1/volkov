@@ -202,13 +202,13 @@ body {
 }
 
 .video_one {
-    /* background: url('../img/video_one.mp4'); */
-    height: 100vh;
+    background: url('../img/video_one.mp4');
+    height: 120vh;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    align-items: left;
 
 }
 /* 
@@ -313,11 +313,11 @@ a, a:hover {
 }
 
 .main-content {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .header {
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -592,8 +592,18 @@ a, a:hover {
 }
 
 .logotip {
-    border-radius: 24px;
-    background-image: url('/assets/img/qgroup.jpg');
+    border-radius: 10px;
+    /* background-image: url('../img/qgroup.jpg'); */
+    /* transform: scale(2); */
+    /* height: 14%; */
+    /* width: 14%; */
+    /* background-size: cover; */
+    /* align-items: center; */
+    /* padding: 1%; */
+    /* margin: 1%; */
+    /* display: flex; */
+    /* object-fit: cover; */
+    /* max-width: 100%; */
 }
 
 
@@ -1135,6 +1145,7 @@ a, a:hover {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 48%;
             flex: 0 1 48%;
+    margin-top: 5rem;
 }
 
 .whyme__title span {
@@ -1176,7 +1187,7 @@ a, a:hover {
 }
 
 ul.whyme__text {
-    padding-left: 1.25rem;
+    padding-left: 0rem;
     margin-bottom: unset;
 }
 
@@ -2330,7 +2341,7 @@ border-radius: 24px;
     }
 
     .main-content {
-        margin-top: 7rem;
+        margin-top: 2rem;
     }
 }
 
